@@ -20,14 +20,14 @@ End-to-end data engineering project that extracts data from the Star Wars API (S
 ## Project Structure
 ``` mermaid
 flowchart TD
-    Root(.) --> src[src/]
-    Root --> nb[notebooks/]
-    Root --> git[.gitignore]
-    Root --> py[.python-version]
-    Root --> read[README.md]
+    Root[.] --> src["src/"]
+    Root --> nb["notebooks/"]
+    Root --> git[".gitignore"]
+    Root --> py[".python-version"]
+    Root --> read["README.md"]
 
 ```
-
+### Architecture
 ```mermaid
 flowchart LR
     A["SWAPI<br/>(REST API)"] --> B["Extract<br/>Python"]
