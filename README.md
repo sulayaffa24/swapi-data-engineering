@@ -23,6 +23,7 @@ flowchart TD
     Root(.) --> src[src/]
     Root --> nb[notebooks/]
     Root --> git[.gitignore]
+    Root --> py[.python-version]
     Root --> read[README.md]
 
 ```
@@ -31,9 +32,7 @@ flowchart TD
 flowchart LR
     A["SWAPI<br/>(REST API)"] --> B["Extract<br/>Python"]
     B --> C["Transform<br/>Pandas"]
-    %% Simpler cylinder shape syntax
     C --> D[(BigQuery)]
-    
     E[Prefect Flow] --> B
     E --> C
     E --> D
