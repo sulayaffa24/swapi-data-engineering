@@ -26,12 +26,16 @@ flowchart TD
     Root --> read[README.md]
 
 ```
+
 ```mermaid
 flowchart LR
-  A[SWAPI<br/>(REST API)] --> B[Extract<br/>Python]
-  B --> C[Transform<br/>Pandas]
-  C --> D[(BigQuery)]
-  E[Prefect Flow] --> B
-  E --> C
-  E --> D
+    A["SWAPI<br/>(REST API)"] --> B["Extract<br/>Python"]
+    B --> C["Transform<br/>Pandas"]
+    %% Simpler cylinder shape syntax
+    C --> D[(BigQuery)]
+    
+    E[Prefect Flow] --> B
+    E --> C
+    E --> D
+
 ```
