@@ -26,7 +26,7 @@ flowchart TD
     Root --> read[README.md]
 
 ```
-
+```mermaid
 flowchart LR
   A[SWAPI<br/>(REST API)] --> B[Extract<br/>Python]
   B --> C[Transform<br/>Pandas]
@@ -34,3 +34,4 @@ flowchart LR
   E[Prefect Flow] --> B
   E --> C
   E --> D
+```
