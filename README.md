@@ -1,6 +1,6 @@
 # SWAPI Data Engineering Pipeline (API -> BigQuery)
 
-End-to-end data engineering project that extracts data from the Star Wars API (SWAPI), transforms it with Python/Pandas, and loads analytics-ready tables into BigQuery. The pipeline is orchestrated with Prefect.
+> End-to-end data engineering pipeline that ingests data from the Star Wars API (SWAPI), **performs** transformations with Python and Pandas, and loads it into BigQuery using Prefect for orchestration.
 
 ## Key Features
 - Ingests data from **SWAPI** (REST API)
@@ -8,6 +8,7 @@ End-to-end data engineering project that extracts data from the Star Wars API (S
 - Orchestrated with **Prefect** (logging, retries, deployments)
 - Loads curated datasets into **BigQuery** (primary) and **PostgreSQL** (optional/local dev)
 - Clear separation of bronze, silver, and gold tables (where applicable)
+- **Destination:** BigQuery (primary). PostgreSQL is optional for local development.
 
 ## Tech Stack
 - Python, Pandas
