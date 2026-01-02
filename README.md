@@ -19,7 +19,7 @@
 - Docker
 
 ## Project Structure
-``` mermaid
+```mermaid
 flowchart TD
     Root[.] --> src["src/"]
     Root --> nb["notebooks/"]
