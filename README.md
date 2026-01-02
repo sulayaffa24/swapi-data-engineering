@@ -6,7 +6,7 @@ End-to-end data engineering project that extracts data from the Star Wars API (S
 - Ingests data from **SWAPI** (REST API)
 - Modular extract/transform/load steps in **Python**
 - Orchestrated with **Prefect** (logging, retries, deployments)
-- Load curated datasets into **BigQuery and PostgreSQL** for analytics
+- Loads curated datasets into **BigQuery** (primary) and **PostgreSQL** (optional/local dev)
 - Clear separation of bronze, silver, and gold tables (where applicable)
 
 ## Tech Stack
@@ -38,4 +38,16 @@ flowchart LR
     E --> C
     E --> D
 
+```
+
+## Set up Environment
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Run the Pipeline
+```
+python -m src.flows.swapi_pipeline
 ```
