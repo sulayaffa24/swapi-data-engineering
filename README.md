@@ -39,6 +39,7 @@ flowchart LR
     E --> D
 
 ```
+The pipeline is orchestrated with Prefect, which coordinates API ingestion, transformations, and loading into BigQuery.
 
 ## Set up Environment
 ```bash
@@ -51,3 +52,9 @@ pip install -r requirements.txt
 ```
 python -m src.flows.swapi_pipeline
 ```
+
+## Lessons Learned
+- Designing API ingestion pipelines
+- Handling nested API data for analytical modeling
+- Orchestrating cloud data workflows with Prefect
+- Managing credentials and secret safely in public repositories.
